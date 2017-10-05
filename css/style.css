@@ -1,0 +1,14 @@
+.chat .messages
+{
+    width: 300px;
+    height: 320px;
+    border: 1px solid #000;
+    padding:10px;
+}
+.chat .enter
+{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-top: 5px;
+}
