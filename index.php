@@ -22,6 +22,8 @@ echo $_SESSION['id_membre'];
         <div class="chat">
             <div class="messages"></div>
             <textarea class="enter"></textarea>
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="js/Tchat.js"></script>
         </div>
     
     </body>
