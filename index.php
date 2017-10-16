@@ -1,14 +1,14 @@
 <?php
 session_start();
-if(isset($_GET['id_membre']))
+if(isset($_GET['id_member']))
 {
-    $_SESSION['id_membre'] = (int)$_GET['id_membre'];
+    $_SESSION['id_member'] = (int)$_GET['id_member'];
 }
 else
 {
-    $_SESSION['id_membre'] = '0';
+    $_SESSION['id_member'] = '0';
 }
-echo $_SESSION['id_membre'];
+
 ?>
 <html>
     <head>
@@ -23,7 +23,8 @@ echo $_SESSION['id_membre'];
             <div class="messages"></div>
             <textarea class="enter"></textarea>
             <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-            <script src="js/Tchat.js"></script>
+            <script src="istic.js"></script>
+            <link rel="stylesheet" href="css/bootstrap.css">
         </div>
     
     </body>

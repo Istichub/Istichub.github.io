@@ -1,10 +1,15 @@
 <?php
+/* Connect to a MySQL database */
+$dsn = 'mysql:dbname=chat;host=localhost';
+$user = 'root';
+$password = '';
+
+
 try
 {
- $Connect = new PDO('mysql:host=localhost;dbname:Tchatfast','root',''); 
+$connect = new PDO( $dsn, $user, $password);
 }
-catch(Exception $e)
-{
-    die('Impossible de se connectée!'.$e->getMessage());
+catch (PDOException $e) {
+    echo 'Connection failed: ' . $e->getMessage();
 }
 ?>
